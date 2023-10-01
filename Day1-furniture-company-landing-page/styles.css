@@ -1,0 +1,308 @@
+/* page reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* typography */
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.3;
+    color: #3c3a47;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -3px;
+}
+
+h2 {
+    font-size: 17px;
+    font-weight: 350;
+    letter-spacing: -1px;
+    color: rgba(60, 58, 71, .8);
+}
+
+
+h3 {
+    font-size: 43px;
+    font-weight: 700;
+    letter-spacing: -5px;
+    margin: -5px auto 20px auto;
+}
+
+.dark h3 {
+    color: rgb(255, 255, 255);
+}
+
+h4 {
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+p {
+    margin-bottom: 13px;
+    font-size: 12px;
+}
+
+p.number {
+    font-size: 16px;
+    font-weight: 200;
+    color: rgba(60, 58, 71, .5);
+}
+
+p.adr {
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: -1px;
+    margin-bottom: 25px;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(143, 64, 4);
+}
+
+a:hover {
+    color: rgb(60, 58, 71);
+}
+
+form input,
+form textarea,
+form button {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: inherit;
+}
+
+/* header */
+
+img {
+    width: 100%;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    margin-bottom: 60px;
+}
+
+header {
+    padding: 60px 0;
+    text-align: center;
+    height: 500px;
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.container2 {
+    margin-top: 10px;
+}
+
+.container2 h2 {
+    margin-bottom: 60px;
+}
+
+
+.btn {
+    padding: 12px 32px;
+    border: 1px solid #9F7657;
+    font-weight: 700;
+    font-size: 10px;
+    color: #9F7657;
+    ;
+}
+
+.btn:hover {
+    background-color: rgb(36, 35, 35);
+    color: white;
+    border: 1px solid #000000;
+}
+
+/* chair selection */
+
+#gallery {
+    background-color: #EFF0EA;
+    height: 1000px;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.gallery-header {
+    width: 500px;
+    margin: 0 auto;
+}
+
+p.section-intro {
+    font-size: 12px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+
+.gallery div {
+    text-align: left;
+}
+
+.gallery img {
+    margin-bottom: 5px;
+    width: 100%;
+    height: 500px;
+}
+
+/* form */
+
+#form {
+    background-color: #3C3A47;
+    text-align: center;
+    padding: 150px;
+    color: white;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+form input,
+form textarea {
+    background-color: rgba(255, 255, 255, .1);
+    border: none;
+    width: 100%;
+    color: white;
+    resize: none;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+form button {
+    width: 100%;
+    cursor: pointer;
+}
+
+.dark .btn {
+    border: 1px solid rgba(255, 255, 255, .8);
+    background-color: transparent;
+    color: white;
+}
+
+.dark .btn:hover {
+    color: black;
+    background-color: white;
+}
+
+p.muted {
+    color: white;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+/* contact */
+
+#contact {
+    text-align: center;
+    padding: 100px 50px;
+    height: 500px;
+    line-height: 1.8;
+}
+.social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+li img {
+    width: 20px;
+    height: 20px;
+}
+
+/* footer */
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:800px) {
+    h1, h3 {
+        font-size: 22px;
+        word-spacing: 5px;
+        letter-spacing: 0.5px;
+    }
+
+    header {
+        padding: 15px;
+        height: 350px;
+    }
+    .gallery-header {
+        width: 300px;
+        margin: auto;
+    }
+
+    #gallery {
+        text-align: center;
+        padding: 20px;
+        height: 2100px;
+    }
+    .gallery img {
+        margin-bottom: 5px;
+        width: 100%;
+        height: 500px;
+    }
+
+    div.gallery {
+        display: block;
+        margin-bottom: 20px;
+        line-height: 1;
+    }
+
+    #form {
+        padding: 50px;
+    }
+    
+    form label {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Landing page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="container1">
+      <img class="logo" src="images/Logo.jpg" alt="logo">
+      <h1>Modern Chairs Crafted with Love</h1>
+    </div>
+    <div class="container2">
+      <h2>We love creating high quality and comfortable chairs</h2>
+      <a href="#gallery" class="btn">Discover our chair selection</a>
+    </div>
+  </header>
+
+  <section id="gallery">
+    <div class="gallery-header">
+      <p class="section-intro">THE SELECTION</p>
+      <h3>Our Chairs</h3>
+      <p>We mostly sell one-off items. That means that we make make one-of-a-kind
+        furniture pieces so whoever buys it will have a unique item.</p>
+    </div>
+
+    <div class="gallery">
+      <div>
+        <img src="images/chair1.jpg" alt="">
+        <p class="number">01</p>
+        <h4>Tufted white leather sofa chair</h4>
+        <p>This will fit perfectly in any beauty salon or modern home. Thato its 
+            timeless design</p>
+        <p>$299</p>
+      </div>
+      <div>
+        <img src="images/chair2.jpg" alt="">
+        <p class="number">02</p>
+        <h4>Black and brown wooden chair</h4>
+        <p>Both minimalistic and comfortable, this is a great choice for home or office.</p>
+        <p>$299</p>
+      </div>
+      <div>
+        <img src="images/chair3.jpg" alt="">
+        <p class="number">03</p>
+        <h4>Rustic wooden bar stool</h4>
+        <p>Made from solid beech wood, this piece will fit nicely in your rustic kitchen.
+        </p>
+        <p>$139</p>
+      </div>
+    </div>
+
+    <div class="gallery-footer">
+      <p>Interested in the product? <a href="#form">send us a message</a> or
+      <a href="#contact">visit our store</a><p>
+    </div>
+  </section>
+
+  <section id="form" class="dark">
+    <div class="form-header">
+      <p class="section-intro">CONTACT US</p>
+      <h3>Let's get in touch</h3>
+    </div>
+
+    <div class="form">
+      <form action="lvdsf.php" method="post">
+        <div>
+          <label for="name">NAME</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div>
+          <label for="email">EMAIL ADDRESS</label>
+          <input type="text" name="email" id="email">
+        </div>
+        <div>
+          <label for="msg">MESSAGE</label>
+          <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+          <button class="btn">Send message</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="form-footer">
+      <p class="muted"><em>all field are required. We'll get back to you as soon as possible.</em></p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div>
+      <p class="section-intro">VISIT OUR STORE</p>
+    </div>
+
+    <div>
+      <h3 class="large">(307) 555-0133</h3>
+    </div>
+
+    <div>
+      <div>
+        <p class="adr">2972 Westheimer Rd, Santa Ana, Illinois 85486</p>
+      </div>
+
+      <div class="social-icons">
+        <ul class="social-icons">
+          <li>
+            <a href=""><img src="images/twitter1.svg" alt=""></a>
+          </li>
+          <li>
+            <a href=""><img src="images/facebook-f1.svg" alt=""></a>
+          </li>
+          <li>
+            <a href=""><img src="images/instagram1.svg" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+    <footer>
+      <p>
+        &copy; Copyright 2021 The Chair Company. All rights reserved. Built with <a 
+        href="wordpress.com">Wordpress</a> and <a href="elementor.com">Elementor </a>
+      </p>
+    </footer>
+</body>
+</html>
