@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+	<p>Calculator for Your Simple Maths Operations 😄 </p>
+	<div class="display">
+		<p id="display">0</p>
+	</div>
+	<div>
+		<button onclick="calculation += 1; displayCalculation();">1</button>
+		<button onclick="calculation += 2; displayCalculation();">2</button>
+		<button onclick="calculation += 3; displayCalculation();">3</button>
+		<button class="colored" onclick="calculation += ' / '; displayCalculation();">/</button>
+		<button onclick="calculation += 4; displayCalculation();">4</button>
+		<button onclick="calculation += 5; displayCalculation();">5</button>
+		<button onclick="calculation += 6; displayCalculation();">6</button>
+		<button class="colored" onclick="calculation += ' * '; displayCalculation();">*</button>
+		<button onclick="calculation += 7; displayCalculation();">7</button>
+		<button onclick="calculation += 8; displayCalculation();">8</button>
+		<button onclick="calculation += 9; displayCalculation();">9</button>
+		<button class="colored" onclick="calculation += ' - '; displayCalculation();">-</button>
+		<button onclick="calculation += '.'; displayCalculation();">.</button>
+		<button onclick="calculation += 0; displayCalculation();">0</button>
+		<button class="red" onclick="displayCalculation(); displayResult(); calculation = '';">=</button>
+		<button class="colored" onclick="calculation += ' + '; displayCalculation();">+</button>
+	</div>
+	
+	<p>Designed and Programmed by <span>CodesByAbdul</span>. All rights reserved. </p>
+
+
+<script>
+	let calculation = '';
+	
+	function displayCalculation() {
+		document.getElementById('display').innerHTML=calculation;
+	}
+	
+	function displayResult() {
+document.getElementById('display').innerHTML=eval(calculation);
+	}
+</script>
+</body>
+</html>
