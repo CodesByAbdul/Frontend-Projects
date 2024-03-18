@@ -11,6 +11,10 @@
 		<p id="display">0</p>
 	</div>
 	<div>
+		<button onclick="clearAll(); calculation = '';">AC</button>
+		<button onclick="percentCalc(); calculation = '';">%</button>
+		<button onclick="squareCalc(); calculation = '';">^</button>
+		<button class="red" onclick="calculation = calculation.slice(0, -1); displayCalculation();">clr</button>
 		<button onclick="calculation += 1; displayCalculation();">1</button>
 		<button onclick="calculation += 2; displayCalculation();">2</button>
 		<button onclick="calculation += 3; displayCalculation();">3</button>
@@ -25,7 +29,7 @@
 		<button class="colored" onclick="calculation += ' - '; displayCalculation();">-</button>
 		<button onclick="calculation += '.'; displayCalculation();">.</button>
 		<button onclick="calculation += 0; displayCalculation();">0</button>
-		<button class="red" onclick="displayCalculation(); displayResult(); calculation = '';">=</button>
+		<button class="green" onclick="displayCalculation(); displayResult(); calculation = '';">=</button>
 		<button class="colored" onclick="calculation += ' + '; displayCalculation();">+</button>
 	</div>
 	
@@ -36,11 +40,23 @@
 	let calculation = '';
 	
 	function displayCalculation() {
-		document.getElementById('display').innerHTML=calculation;
+document.getElementById('display').innerHTML=calculation;
 	}
 	
 	function displayResult() {
 document.getElementById('display').innerHTML=eval(calculation);
+	}
+	
+	function clearAll() {
+document.getElementById('display').innerHTML=calculation= '';
+	}
+	
+	function percentCalc() {
+document.getElementById('display').innerHTML=eval(calculation/100);
+	}
+	
+	function squareCalc() {
+document.getElementById('display').innerHTML=eval(calculation * calculation);
 	}
 </script>
 </body>
