@@ -38,6 +38,11 @@ button {
 	background-color: red;
 }
 
+.green {
+	background-color: green;
+}
+
+
 div {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
