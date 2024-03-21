@@ -14,11 +14,17 @@ h1 {
 	padding: 10px;
 }
 
-div {
+div.images, div.label{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	
+}
+div.score {
+	background-color: black;
+	margin: 20px;
+	padding: 10px;
+	color: white;
 }
 
 p {
