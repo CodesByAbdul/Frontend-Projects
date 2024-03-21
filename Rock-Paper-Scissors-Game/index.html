@@ -25,15 +25,18 @@
 
 		<br>
 		<ul><li>Click on the images below to choose your weapon.</li></ul>
-		<div>
-			<img src="images/img3.png" alt="rock image" onclick="pick(); rockLaws();">
-			<img src="images/img1.png" alt="paper image" onclick="pick(); paperLaws();">
-			<img src="images/img2.png" alt="scissors image" onclick="pick(); scissorsLaws();">
+		<div class="images">
+			<img src="images/img3.png" alt="rock image" onclick="playRound('rock');">
+			<img src="images/img1.png" alt="paper image" onclick="playRound('paper');">
+			<img src="images/img2.png" alt="scissors image" onclick="playRound('scissors');">
 		</div>
 		<div class="label">
 			<p> Rock </p>
 			<p> Paper </p>
 			<p> Scissors </p>
+		</div>
+		<div class="score">
+			<p id="updateScore"> Player : 0. Computer : 0. Tie : 0. Lives : 10 </p>
 		</div>
 		
 		<br><br>
@@ -41,25 +44,6 @@
 		
 		
 		
-		<script>
-			let computerMove;
-			let result;
-			
-			function pick(){
-				const pick = Math.random(); if (pick >= 0 && pick < 1/3) {computerMove = 'Rock';} else if (pick >= 1/3 && pick < 2/3) {computerMove = 'Paper';} else if (pick >= 2/3 && pick < 1) {computerMove = 'Scissors';}
-			}
-			
-			function rockLaws() {
-				if (computerMove === 'Rock') {result = 'It\'s a Tie 💪';} else if (computerMove === 'Paper') {result = 'You Lose 😩';} else {result = 'You Won 😁';} alert(`You pick Rock. Computer picks ${computerMove}. ${result}.`);
-			}
-			
-			function paperLaws() {
-				if (computerMove === 'Rock') {result = 'You Won 😂';} else if (computerMove === 'Paper') {result = 'It\ʼs a Tie 💪';} else {result = 'You Lose 😩';} alert(`You pick Paper. Computer picks ${computerMove}. ${result}.`);
-			}
-			
-			function scissorsLaws() {
-				if (computerMove === 'Rock') {result = 'You Lose 😩';} else if (computerMove === 'Paper') {result = 'You Won 😂';} else {result = 'It\ʼs a Tie 💪';} alert(`You pick Scissors. Computer picks ${computerMove}. ${result}.`);
-			}
-		</script>
+		<script src="script.js"></script>
 	</body>
 </html>
