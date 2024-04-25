@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	//font-size: 18px;
+	font-family: Courier;
+}
+
+body{
+	background-color: powderblue;
+}
+
+.player h1 {
+	margin: 40px 0;
+}
+
+.totalScore {
+	//margin-bottom: 40px;
+	color: #f61498;
+}
+
+.playScreen {
+	width: 65%;
+	height: 350px;
+	margin: 20px auto;
+	background-color: rgba(25, 99, 71, 0.3);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	text-align: center;
+	position: relative;
+}
+
+.currentScore {
+	padding: 20px 10px;
+	background-color: #ff6347;
+	border-radius: 10px;
+	margin: 80px auto 0;
+	width: 40%;
+	color: white;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	//top: 10%;
+	left: 42.5%;
+	gap: 40px;
+	margin: 20px 0;
+}
+.rollHold {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	row-gap: 8px;
+	
+}
+
+.diceResult {
+	width: 100px;
+	border-radius: 10px;
+}
+img {
+	width: 100%;
+}
+
+.activePlayer {
+	background-color: #f48936;
+}
+
+.playerWins {
+	background-color: #fff;
+	padding-top: 150px;
+	font-size: 30px;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+button {
+	border-radius: 20px;
+	padding: 10px;
+}
+
+button:hover {
+	background-color: tomato;
+	transition: background-color 0.5s linear 0.5s;
+}
+
+div.rules {
+	margin: 20px;
+}
