@@ -62,7 +62,7 @@ function cardFlip() {
 				disableCards();
 				clearInterval(countdownInterval);
 				setTimeout(() => {
-					alert('You are a Gamer 🏆');
+					alert('You are a Memory Master 🏆');
 					}, 1000);
 			}
 			// Add matched cards to the array
