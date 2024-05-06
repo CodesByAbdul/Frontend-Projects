@@ -19,6 +19,12 @@ let matchedPairs = 0;
 let countdownTime = 90;
 let countdownInterval;
 
+const matchSound = new Audio('sounds/match.wav');
+matchSound.preload = 'auto';
+
+const unmatchSound = new Audio('sounds/unmatch.wav');
+unmatchSound.preload = 'auto';
+
 // Function to shuffle array:
 function shuffle(array) {
 	for (let i = array.length - 1; i > 0; i--) {
@@ -48,7 +54,6 @@ function cardFlip() {
         
 		if (card1.lastElementChild.src === card2.lastElementChild.src) {
 			// Cards match, play match sound
-			const matchSound = new Audio('sounds/match.wav');
 			matchSound.play();
 			// Increment matched pairs
 			matchedPairs++;
@@ -66,7 +71,6 @@ function cardFlip() {
 			card2 = null;
 		} else {
 			// Cards don't match, hide them again
-			const unmatchSound = new Audio('sounds/unmatch.wav');
 			unmatchSound.play();
 			setTimeout(() => {
 				card1.lastElementChild.classList.add('hidden');
