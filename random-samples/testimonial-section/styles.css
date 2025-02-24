@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', serif;
+}
+
+#testimonial {
+  text-align: center;
+  height: 100vh;
+  width: auto;
+}
+
+#heading {
+  margin-bottom: -180px;
+  margin-top: 60px;
+}
+
+.heading {
+  background-color: rgb(197, 204, 207);
+  padding: 10px;
+  width: 170px;
+  border-radius: 51px;
+  margin: 12px auto;
+  font-weight: 200;
+}
+.rating {
+  margin: 10px auto 0;
+  font-weight: 200;
+  font-size: small;
+}
+
+#flex-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.horizontal-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.vertical-flex {
+  width: 85px;
+  height: 12vh;
+  background-color: rgb(197, 204, 207);
+  border-radius: 10px;
+}
+
+#testimony {
+  margin: -110px auto ;
+  background-color: rgb(197, 204, 207);
+  padding: 20px;
+  text-align: justify;
+  width: 500px;
+  margin-left: auto;
+  font-weight: 200;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.name {
+  margin: 0 auto 10px;
+}
+
+.customer {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  margin-right: 25px;
+
+}
+
+.arrows {
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 50%;
+}

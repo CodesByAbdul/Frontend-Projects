@@ -1,0 +1,251 @@
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1E293B; /* Dark navy background */
+  z-index: 1000; /* Ensures it stays on top */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+#navbar ul{
+  display: flex;
+  list-style: none;
+  justify-content: center; /* Centers the items horizontally */
+  padding: 0;
+  margin: 0;
+}
+
+#navbar li {
+  margin: 0 20px; /* Adds horizontal spacing between items */
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out; /* Adds a smooth effect */
+}
+
+#navbar a:hover {
+  color: #f9a826; /* Light orange text */
+  transform: translateY(-5px); /* Moves the text down slightly */
+}
+
+#welcome-section {
+ width: 100%;
+  height: 100vh;
+  background-color: #25406b; /* Dark navy background */
+  color: white;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  margin: 0;
+  padding: 140px 40px 20px 40px;
+  text-align: center;
+  animation: typing 2s steps(30, end) forwards, blink 0.7s step-end infinite;
+}
+
+#welcome-section p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: rgb(194, 114, 52); /* Light orange text */
+}
+
+
+#welcome-section a {
+  background-color: #f9a826; /* Light orange background */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 30ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+#about {
+  background-color: #f9a826; /* Light orange background */
+  color: white;
+  padding: 90px 10%;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+#about p {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+#services {
+  background-color: #1E293B; /* Dark navy background */
+  color: white;
+  padding: 90px 10%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#projects {
+  background-color: #25406b; /* Dark navy background */
+  color: white;
+  padding: 90px 10%;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.portfolio-item {
+  background-color: #1E293B; /* Dark navy background */
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  width: 30%;
+}
+
+#contact {
+  background-color: #f9a826; /* Light orange background */
+  color: white;
+  padding: 90px 10%;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+#contact p {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+#contact a {
+  background-color: #1E293B; /* Dark navy background */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#contact a:hover {
+  background-color: #d3a04e; /* Light orange background */
+  color: white;
+}
+
+footer {
+  background-color: #1E293B; /* Dark navy background */
+  color: white;
+  padding: 20px 10%;
+  text-align: center;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 20px 5%;
+  }
+
+  #welcome-section h1 {
+    font-size: 2rem;
+    padding: 140px 20px 20px 20px;
+  }
+
+  #welcome-section p {
+    font-size: 1rem;
+  }
+
+  #welcome-section a {
+    width: 150px;
+  }
+
+  #about h2 {
+    font-size: 2rem;
+  }
+
+  #about p {
+    font-size: 1rem;
+  }
+
+  #services {
+    font-size: 1.5rem;
+  }
+
+  #projects {
+    font-size: 1.5rem;
+  }
+
+  .portfolio-item {
+    width: 100%;
+  }
+
+  #contact h2 {
+    font-size: 2rem;
+  }
+
+  #contact p {
+    font-size: 1rem;
+  }
+
+  #contact a {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #navbar ul {
+    flex-direction: column;
+  }
+
+  #navbar li {
+    margin: 10px 0;
+  }
+
+  #navbar a {
+    font-size: 1.5rem;
+  } 
+}

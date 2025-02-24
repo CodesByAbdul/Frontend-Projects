@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  scroll-behavior: smooth;
+  font-size: 1.3em;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  background-color: #333;
+}
+
+#header-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+}
+ 
+h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  background-color: #555;
+  text-decoration: underline;
+}
+
+#home {
+  background-color: lightblue;
+  text-align: center;
+  padding: 20px;
+  justify-items: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  gap: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px 0;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+}
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#about {
+  padding: 20px;
+  justify-items: center;
+  background-color: rgb(146, 228, 228);
+}
+
+#products {
+  justify-items: center;
+  background-color: antiquewhite;
+  padding: 15px;
+}
+
+.project-catalogue {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: nowrap;
+  gap: 20px;;
+}
+
+.catalogue-img {
+  width: 350px;
+  height: 400px;
+}
+
+#contact {
+  justify-items: center;
+  background-color: aliceblue;
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  .project-catalogue {
+    display: block;
+    justify-items: center;
+  }
+
+  .footer {
+    display: block;
+  }
+
+  header {
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+  }
+}
