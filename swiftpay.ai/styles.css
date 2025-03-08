@@ -11,15 +11,14 @@ body {
 
 .container {
   width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: 20px auto;
+  padding: 0 40px;
   display: flex;
   justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: #ececec;
 }
 
 .logo {
@@ -88,7 +87,6 @@ nav a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
   background-color: #000000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   padding: 10px;
@@ -114,7 +112,12 @@ nav a:visited {
 }
 
 .div-download-btn:hover {
-  background-color: rgb(44, 43, 43);
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+.div-download-btn:hover .download-btn {
+  color: #000;
 }
 
 #hero-section {
