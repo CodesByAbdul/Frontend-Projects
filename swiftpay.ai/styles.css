@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #ececec;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 42px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 40px;
+}
+
+.header-flex ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-flex ul li {
+  margin-right: 20px;
+  
+}
+
+/* Basic styles for all nav links */
+.header-flex ul li a {
+  color: #080808; /* Text color - dark gray */
+  text-decoration: none;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Hover effect */
+.header-flex ul li a:hover {
+  
+  color: #c01212; /* Black text on hover */
+}
+
+/* Active link (currently selected) */
+.header-flex ul li a.active {
+  background-color: #0e0d0d; /* Bright blue background for active link */
+  color: white; /* White text for active link */
+  padding: 5px 15px; /* Larger padding on active link */
+  background-color: #0a0a0a;
+  border-radius: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Visited links */
+nav a:visited {
+  color: #333333; /* Keep consistent with normal state */
+}
+
+
+.div-download-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  font-weight: bold;
+  font-size: 500;
+  border-radius: 40px;
+}
+
+.div-download-btn .download-btn {
+  color: #fff;
+}
+.div-download-btn img {
+  width: 18px;
+  height: 18px;
+  margin-right: 2px;
+  border-radius: 50%;
+}
+
+.download-btn {
+  margin-right: 5px;  
+  text-decoration: none;
+  color: #fff;
+}
+
+.div-download-btn:hover {
+  background-color: rgb(44, 43, 43);
+}
+
+#hero-section {
+  margin: 120px 50px 200px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 30px;
+  height: 100vh;
+}
+
+.hero-content {
+  width: 50%;
+  flex: 1;
+
+}
+
+.hero-img {
+  width: 50%;
+  flex: 1;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.top-hero-content .desc {
+  width: 215px;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 8px 12px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.top-hero-content h1 {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 20px;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+.top-hero-content .hero-desc {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  margin-bottom: 30px;
+  line-height: 150%;
+}
+
+.top-hero-content .div-download-btn {
+  width: 30%;
+}
+
+.down-hero-content {
+  margin-top: 250px;
+}
+
+.down-hero-content p {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 10px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.down-hero-content-images {
+  position: relative;
+}
+
+.down-hero-content-images img {
+  position:absolute;
+}
+
+.down-hero-content-images img:nth-child(1) {
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.down-hero-content-images img:nth-child(2) {
+  top: 0;
+  left: 20px;
+  z-index: 4;
+}
+
+.down-hero-content-images img:nth-child(3) {
+  top: 0;
+  left: 40px;
+  z-index: 3;
+}
+
+.down-hero-content-images img:nth-child(4) {
+  top: 0;
+  left: 60px;
+  z-index: 2;
+}
+
+.down-hero-content-images img:nth-child(5) {
+  top: 0;
+  left: 80px;
+  z-index: 1;
+}
+
+.down-hero-content-images img:nth-child(6) {
+  top: 0;
+  left: 100px;
+  z-index: 0;
+}
+
+#brand-logo-section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+  gap: 30px;
+}
+
+.brand-logo-text {
+  font-weight: 500;
+}
+
+.logo-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+}
+
+#about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 50px;
+  gap: 30px;
+  height: 100vh;
+}
+
+.about-section1 {
+  width: 50%;
+  flex: 1;
+  background-color: #ececec;
+  padding: 25px 40px;
+  border-radius: 30px;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.about-section1-top-content {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 60px;
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.about-section1-review-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+.customer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: center;
+
+}
+
+.arrow {
+  display: flex;
+  gap: 5px;
+}
+
+.left, .right {
+  background-color: #ececec;
+  width: 30px;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.message {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 1px;
+}
+
+.about-section1-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-section1-bottom-content-left {
+  background-color: #fff;
+  padding: 70px 20px;
+  border-radius: 20px;
+  width: 45%;
+
+}
+
+.about-section1-bottom-content-right {
+  background-color: #000;
+  color: #fff;
+  padding: 70px 20px;
+  border-radius: 20px;
+  width: 45%;
+  
+}
+
+.about-section1-bottom-content-left h2, .about-section1-bottom-content-right h2 {
+  font-size: 50px;
+  line-height: 150%;
+}
+
+.about-section2 {
+  width: 50%;
+  flex: 1;
+}
+
+.about-section2 {
+  font-family: 'Urbanist', sans-serif;
+  width: 50%;
+  flex: 1;
+  padding: 25px 40px;
+}
+
+.about-section2-top {
+  background-color: #fff;
+  width: 125px;
+  padding: 5px 10px;
+  border-radius: 30px;
+  margin-bottom: 40px;
+}
+
+.about-section2-main h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.about-section2-main p {
+  line-height: 150%;
+  font-weight: 200;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.about-section2-lists {
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+
+}
+
+.about-section2-lists img {
+  margin-right: 15px;
+}
+
+.about-section2-lists p {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.about-section2 .div-download-btn {
+  width: 150px;
+}
