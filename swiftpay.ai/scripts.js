@@ -48,6 +48,33 @@ window.addEventListener('scroll', () => {
   });
 });
 
+// Mobile navigation
+
+const navToggle = document.querySelector('.mobile-menu-btn');
+const navMenu = document.querySelector('.mobile-menu-content');
+const cancelMenu = document.querySelector('.cancel-menu');
+const menuLinks = document.querySelectorAll('.mobile-menu-content a');
+
+navToggle.addEventListener('click', () => {
+  navMenu.style.display = navMenu.style.display === 'block' ? 'none' : 'block';
+  navToggle.style.display = 'none';
+  cancelMenu.style.display = 'block';
+});
+
+cancelMenu.addEventListener('click', () => {
+  navMenu.style.display = 'none';
+  cancelMenu.style.display = 'none';
+  navToggle.style.display = 'block';
+});
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.style.display = 'none';
+    cancelMenu.style.display = 'none';
+    navToggle.style.display = 'block';
+  });  
+});
+
 /* Testimonial functionality */
 
 // Testimonial data
