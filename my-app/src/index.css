@@ -1,0 +1,106 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #8a4646;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+p {
+  font-size: 2em;
+  text-align: center;
+  color: rgb(8, 185, 229);
+  margin: 10px;
+}
+
+div {
+  text-align: center;
+}
+.card {
+  border: 2px solid rgba(0, 0, 0, 0.434);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 5px 5px 5px #3c3a3acb;
+  max-width: 200px;
+  text-align: center;
+  display: inline-block;
+}
+
+.image {
+  width: 100px;
+  height: auto;
+  margin: 0;
+}
+
+.name {
+  margin: 0;
+}
+
+.description {
+  margin: 0;
+}
+
+.list-category {
+  border: 1px solid gray;
+  background-color: #544141;
+  text-align: center;
+}
+
+.list-items {
+  list-style-type: disc;
+}
+
+.list-items li:hover {
+  cursor: pointer;
+}
+
+.welcome {
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 5px;
+  padding : 5px;
+  background-color: rgb(23, 237, 73);
+}
+
+.login {
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 5px;
+  padding : 5px;
+  background-color: red;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  color: azure;
+  background-color: #8a4646;
+  border: 2px solid gray;
+  border-radius: 10px;
+  cursor: pointer;
+  width:auto;
+  height: auto;
+  font-size: 1em; 
+  text-align: center;
+}
+
+.color-display {
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid gray;
+  border-radius: 15px;
+}
