@@ -5,12 +5,16 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #8a4646;
+  background-color: #f903031d;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+div {
+  padding: 20px;
 }
 
 body {
@@ -26,9 +30,7 @@ p {
   margin: 10px;
 }
 
-div {
-  text-align: center;
-}
+
 .card {
   border: 2px solid rgba(0, 0, 0, 0.434);
   border-radius: 5px;

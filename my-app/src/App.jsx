@@ -5,9 +5,7 @@ import MyComponent from './components/MyComponent.jsx'
 function App () {
   return (
     <>
-      <ColorPicker />
-      <MyComponent />
-      
+      <h1>hello, world!</h1>
     </>
   )
 }
